@@ -6,15 +6,14 @@ int main() {
     int tempmax = a[0];
     int tempmin = a[0];
     for (int i = 0; i < 10; i++) {
-        if (tempmax < a[i]) {
+        if (a[i] > tempmax) {
             tempmax = a[i];
         }
-        if (tempmin > a[i]) {
+        if (a[i] < tempmin) {
             tempmin = a[i];
         }
     }
-    printf("%d\n", tempmax);
-    printf("%d\n", tempmin);
+    printf("%d\n%d\n", tempmax, tempmin);
 
     return 0;
 }

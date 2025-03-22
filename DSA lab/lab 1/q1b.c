@@ -3,9 +3,9 @@
 int main() {
     int a[10] = {11, 8, 3, 2, 5, 6, 4, 9, 7, 10};
     int n = 10;
-    int min;
+
     for (int i = 0; i < n - 1; i++) {
-        min = i;
+        int min = i;
         for (int j = i + 1; j < n; j++) {
             if (a[j] < a[min]) {
                 min = j;
@@ -22,6 +22,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
+    putchar('\n');
 
     return 0;
 }
