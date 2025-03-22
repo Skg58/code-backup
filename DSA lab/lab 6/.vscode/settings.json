@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "compare": "c",
+        "concepts": "c",
+        "type_traits": "c",
+        "new": "c",
+        "typeinfo": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "string_view": "c"
+    }
+}

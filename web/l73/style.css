@@ -1,0 +1,8 @@
+.container{
+    border: 2px solid black;
+    width: 100vw;
+    height:30vh;
+}
+.box{
+    border: 2px solid black;
+}
