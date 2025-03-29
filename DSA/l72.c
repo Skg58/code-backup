@@ -40,6 +40,23 @@ void inOrder(struct node *root) {
         
     }
 
+    int bst(struct node*root,int min,int max){
+    if (root!=NULL)
+    {
+        if (root->data <=min||root->data>=max)
+        {
+            return 0;
+        }
+        else{
+            return bst(root->left,min,root->data)&&bst(root->right,root->data,max);
+        }
+        
+    }
+    else{
+        return 1;
+    }
+    }
+
 int main() {
     // Constructing the root node - Using Function (Recommended)
     struct node *p = createNode(5);
@@ -63,7 +80,7 @@ int main() {
     inOrder(p);
     printf("\n");
     // printf("%d", isBST(p));
-    if (isBST(p)) {
+    if (bst(p,INT_MIN,INT_MAX)) {
         printf("This is a bst");
     } else {
         printf("This is not a bst");

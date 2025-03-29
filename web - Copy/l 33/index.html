@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color1: rgba(38, 38, 100, 0.534);
+            --color2: rgba(255, 91, 36, 0.929);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            /* display: inline-block; */
+            display: flex;
+            list-style: none;
+            /* list-style-position: inside; */
+            /* border: 2px solid black; */
+            /* list-style: devanagari; */
+
+            /* display: inline-block; */
+            /* background-color: rgba(38, 38, 100, 0.534); */
+            background-color: var(--color1);
+
+        }
+
+        ul li {
+            border: 3px solid var(--color2);
+            width: 80px;
+            margin: 15px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Content</li>
+        </ul>
+    </div>
+</body>
+
+</html>

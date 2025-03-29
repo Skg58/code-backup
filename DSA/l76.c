@@ -1,5 +1,7 @@
 #include <malloc.h>
 #include <stdio.h>
+#include <stdbool.h>
+
 struct node {
     int data;
     struct node *left;
@@ -34,6 +36,8 @@ void insert(struct node *root, int key) {
         prev->right = new;
     }
 }
+
+
 
 int main() {
     // Constructing the root node - Using Function (Recommended)

@@ -34,6 +34,28 @@ struct node *search(struct node *root, int key) {
     }
 }
 
+struct node *search1(struct node *root, int key) {
+    while (root!=NULL && root->data != key)
+    {
+       /* if (root->data>key)
+        {
+            root = root->left;
+        }
+        else{
+            root=root->right;
+        }*/
+
+            
+        root = (root->data>key)? root->left:root->right;
+        
+    }
+    return root;
+    
+}
+
+
+
+
 int main() {
     // Constructing the root node - Using Function (Recommended)
     struct node *p = createNode(5);
@@ -54,7 +76,7 @@ int main() {
     p1->left = p3;
     p1->right = p4;
 
-    struct node *n = search(p, 1);
+    struct node *n = search1(p, 1);
     if (n != NULL) {
         printf("Found: %d", n->data);
     } else {

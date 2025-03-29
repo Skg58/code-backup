@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container1 {
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+            height: 100px;
+            background-color: rgb(192, 238, 255);
+            z-index: 1;
+        }
+
+        .container1 ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .container1 ul li {
+            border: 2px solid brown;
+            margin: 25px;
+            padding: 10px 20px;
+            margin-left: 15px;
+        }
+
+
+        .container2 {
+            width: 100vw;
+            height: 1000px;
+            background-color: black;
+        }
+
+        .container3 {
+            width: 100vw;
+            height: 200px;
+            background-color: white;
+
+        }
+
+        .container2 .box1 {
+            position: relative;
+            height: 80vh;
+            width: 90vw;
+            background-color: green;
+            top: 15px;
+            left: 55px;
+        }
+
+        .box2 {
+            position: relative;
+            top: 150px;
+            left: 250px;
+            width: 60vw;
+            height: 80px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 40px;
+        }
+
+        .box1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box1 .boxp1 {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(215, 137, 150);
+
+        }
+
+        .box1 .boxp2 {
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+
+
+        }
+
+        .container2 .box3 {
+            width: 80px;
+            height: 80px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            border-radius: 1550px;
+            margin: -200px 1430px;
+            position: fixed;
+            /* z-index: 1; */
+            background-color: rgb(238, 0, 255);
+
+        }
+
+        .box3 img {
+            border-radius: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container1">
+
+
+
+
+        <ul>
+            <li>Home</li>
+            <li>About </li>
+            <li>content</li>
+            <li>Contact us</li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="container2">
+        <div class="box1">
+            <div class="boxp1"></div>
+            <div class="boxp2"></div>
+
+        </div>
+
+
+        <div class="box2">
+            Welcome to Sigma Web Development Express
+        </div>
+        <div class="box3"><img src="Screenshot 2024-12-29 230154.png" alt=""></div>
+    </div>
+
+
+
+
+    <div class="container3"></div>
+
+
+
+</body>
+
+</html>

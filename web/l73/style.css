@@ -1,8 +1,47 @@
-.container{
-    border: 2px solid black;
-    width: 100vw;
-    height:30vh;
+.container {
+    width: 53vw;
+    /* height: 19vh; */
+    height: 132px;
+    /* background-color: black; */
 }
-.box{
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 7px 4px;
     border: 2px solid black;
+    margin:10px;
+
+
+}
+
+.image img {
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+
+
+
+.image {
+    position: relative;
+
+}
+
+.image .capsule {
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 4px;
+    right: 0px;
+    z-index: 10;
+    font-size: 12px;
+}
+
+.text h1,p {
+    padding: 2px 0;
 }

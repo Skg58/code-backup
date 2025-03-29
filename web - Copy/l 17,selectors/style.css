@@ -1,0 +1,53 @@
+.mango {
+    color: yellow;
+}
+
+#apple {
+    color: red;
+}
+
+div {
+    background-color: greenyellow;
+}
+
+span {
+    background-color: pink;
+}
+
+/* child selector */
+div>p {
+    color: red;
+}
+
+/* descedant selectors  */
+div p {
+    background-color: pink;
+}
+
+/* universal selectors*/
+* {
+    margin: 10;
+    padding: 0;
+}
+
+/* pseudo selectors*/
+/* max use for anchor tag  */
+a:visited {
+    color: red;
+}
+
+a:link {
+    color: green;
+}
+
+a:active {
+    background-color: red;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+p:first-child {
+    color: brown;
+}

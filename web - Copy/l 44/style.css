@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1480px;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+
+.ram {
+    margin: -80px;
+    margin-left: 680px;
+
+
+}
+
+.ram ul {
+    list-style: none;
+    display: flex;
+    gap: 10px 20px;
+    margin-top: 15px;
+
+    gap: 0px 20px;
+}
+
+li {
+    /* border: 2px solid black; */
+    width: 79px;
+    margin-top: 40px;
+    margin-right: 40px;
+    size: 12px;
+}
+
+.box {
+    margin: 20px;
+    padding-left: 189px;
+}
+
+.box1 {
+    /* border: 2px solid black; */
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 162, 0);
+    margin-top: -80px;
+    margin-left: 138px;
+
+}
+
+.box2 {
+    width: 1480px;
+    height: 266px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.box2 span {
+    margin: 15px;
+    size: 50px;
+    font-weight: 700;
+}
+
+.box2p {
+    width: 650px;
+    margin-top: 20px;
+}
+
+button {
+    width: 275px;
+    height: 45px;
+    margin-top: 39px;
+    background-color: rgba(0, 221, 255, 0.958);
+    color: white;
+
+}
+
+.boxp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container3 {
+    width: 1277px;
+    height: 30px;
+    /* border: 2px solid black; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 204px;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 157px;
+    margin-bottom: -100px;
+
+}
+
+.container4 {
+    width: 1478px;
+    height: 500px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    gap: 80px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.item {
+    gap: 20px;
+
+}
+
+.item div {
+    border: 2px solid black;
+    width: 150px;
+    margin-top: 64px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(0, 128, 0, 0.625);
+    cursor: pointer;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.item span {
+    margin-left: 36px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container3 h2 {
+    border: 2px solid black;
+    width: 59px;
+    height: 49px;
+    text-align: center;
+    border-radius: 59px;
+    margin-right: 10px;
+    padding-top: 9px;
+    background-color: rgb(255, 162, 0);
+}
+
+body {
+    /* background-color: rgb(222, 135, 135); */
+}
