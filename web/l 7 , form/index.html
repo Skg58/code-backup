@@ -11,8 +11,8 @@
     <h1>Form for college club</h1>
     <form action="post">
         <div>
-            <label for="username">Enter student name</label>
-            <input type="text" id="username" name="username" placeholder="enter your username">
+            <label for="username" >Enter student name</label>
+            <input type="text" id="username" name="username" placeholder="enter your username" pattern>
         </div>
         <div>
             <p>select gender
@@ -44,7 +44,9 @@
     </div>
     <div>
         <label for="comment">message to club </label>
-        <textarea name="comment" id="comment" rows="5" cols="30" >please write here</textarea>
+        <!-- <input type="text" id="comment" rows="5" cols="30" placeholder="please write here" > Do not use it for comments -->
+        <textarea name="comment" id="comment" rows="5" cols="30" placeholder="please write here" autofocus ></textarea>
+        <input type="submit" >
     </div>
 
     </form>

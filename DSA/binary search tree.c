@@ -1,6 +1,8 @@
 #include <malloc.h>
+#include <stdbool.h>
 #include <stdio.h>
-#include<stdbool.h>
+struct node *helper(struct node *root);
+struct node *lastrightnode(struct node *root);
 struct node {
     int data;
     struct node *left;
@@ -42,7 +44,7 @@ int bst(struct node *root, int min, int max) {
     }
 }
 
-struct node *insert(struct node *root, int key) {
+struct node *insertion(struct node *root, int key) {
     if (root == NULL) {
         return createNode(key);
     }
@@ -68,6 +70,54 @@ struct node *insert(struct node *root, int key) {
     }
     return root;
 }
+
+struct node *deletion(struct node *root, int key) {
+    if (root == NULL) {
+        return NULL;
+    }
+    if (root->data == key) {
+        return helper(root);
+    }
+    struct node *temp = root;
+    while (root != NULL) {
+        if (root->data > key) {
+            if (root->left != NULL && root->left->data == key) {
+                root->left = helper(root->left);
+                break;
+            } else {
+                root = root->left;
+            }
+
+        } else {
+            if (root->right != NULL && root->right->data == key) {
+                root->right = helper(root->right);
+                break;
+            } else {
+                root = root->right;
+            }
+        }
+    }
+    return temp;
+}
+struct node *helper(struct node *root) {
+    if (root->left == NULL) {
+        return root->right;
+    } else if (root->right == NULL) {
+        return root->left;
+    }
+    struct node *rootright = root->right;
+    struct node *lastright = lastrightnode(root->left);
+    lastright->right = rootright;
+    return root->left;
+}
+
+struct node *lastrightnode(struct node *root) {
+    while (root->right != NULL) {
+        root = root->right;
+    }
+    return root;
+}
+
 int main() {
     // Constructing the root node - Using Function (Recommended)
     struct node *p = createNode(5);
@@ -100,8 +150,12 @@ int main() {
         printf("This is not a bst\n");
     }
 
-    p=insert(p,0);
-    p=insert(p,7);
+    p = insertion(p, 0);
+    p = insertion(p, 7);
+    inOrder(p);
+    printf("\n");
+    // p = deletion(p, 3);
+    p = deletion(p, 7);
     inOrder(p);
 
     return 0;
