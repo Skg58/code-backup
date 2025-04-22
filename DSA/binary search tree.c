@@ -98,7 +98,7 @@ struct node *deletion(struct node *root, int key) {
             }
         }
     }
-    return temp;
+    return temp; 
 }
 struct node *helper(struct node *root) {
     if (root->left == NULL) {
