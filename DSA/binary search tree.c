@@ -17,6 +17,7 @@ struct node *createNode(int data) {
     n->right = NULL;
     return n;
 }
+
 void inOrder(struct node *root) {
     if (root != NULL) {
         inOrder(root->left);

@@ -1,6 +1,7 @@
 /*What is self- referential structure? Explain through example.*/
+  /* Ans - if a structure contains one or more than one pointer which points to same type of structure is konwn as self-referntial sturcture. */
 #include <stdio.h>
-// single link ofself- referential structure
+// single link of self- referential structure.
 /*struct node
 {
   int d1;            // d1 = data 1

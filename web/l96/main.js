@@ -9,7 +9,8 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-    const todos = new todo({name :"aarav" ,desc:"done",isdone:true,days:365})
+    // const todos = new todo({name :"aarav" ,desc:"done",isdone:true,days:365})
+    const todos = new todo({desc:"done",isdone:true,days:365})
     todos.save()
     res.send('Hello World!')
 
