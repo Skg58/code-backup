@@ -104,9 +104,8 @@ int partition(int *a, int low, int high) {
     return j;
 }
 void Quicksort(int *a, int low, int high) {
-   
     if (low < high) {
-      int  partitionindex = partition(a, low, high);
+        int partitionindex = partition(a, low, high);
         Quicksort(a, low, partitionindex - 1);
         Quicksort(a, partitionindex + 1, high);
     }
