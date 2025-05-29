@@ -1,25 +1,24 @@
-import { useState, useEffect } from 'react'
+import { useState,useCallback } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from '../components/navbar'
-
+import Navbar from './components/navbar'
 function App() {
   const [count, setCount] = useState(0)
-  const [first, setfirst] = useState(0)
-  const [color, setcolor] = useState(0)
+   const [adjective, setAdjective] = useState("good")
 
-  useEffect(() => {
-    alert("Count was changed")
-    setcolor(color + 1)
-  }, [count])
-
+//     const getAdjective =() => {
+//     return "another" + count
+//  }
+    const getAdjective = useCallback(() => {
+    return "another" + count
+ },[count])
 
 
   return (
     <>
+    <Navbar adjective={"good"} getAdjective={getAdjective}/>
       <div>
-        {/* <Navbar color={"navy" + "blue" + color} /> */}
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
