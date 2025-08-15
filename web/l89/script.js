@@ -15,11 +15,11 @@ app.put('/', (req, res) => {
 })
 
 app.get("/index", (req, res) => {
-    console.log("Hey its index")
+    console.log("Hey its index endpoint")
     res.sendFile('templates/index.html', { root: __dirname })
 })
 
-app.get("/api", (req, res) => {
+app.get("/api/:slug", (req, res) => {
     res.json({ a: 1, b: 2, c: 3, d: 4, name: ["harry", "jerry"] })
 })
 

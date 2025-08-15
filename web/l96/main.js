@@ -23,6 +23,14 @@ app.get('/a', async (req, res) => {
     res.json(todos)
 
 })
+app.get('/about', async (req, res) => {
+    let  todos = await todo.find({})
+   console.log(todos);
+   
+    // res.json({name :todos.name,desc: todos.desc})
+    res.json(todos)
+
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

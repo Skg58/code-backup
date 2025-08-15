@@ -7,6 +7,7 @@ if (languages.includes(params.slug)) {
   
     const { slug } = await params
     return <div>My Post: {slug}</div>
+    
   
 }
 else{
